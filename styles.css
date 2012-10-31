@@ -1,0 +1,70 @@
+div#content {
+    clear: both;
+}
+div#navbar {
+    clear:both;
+    border-top: solid 1px black;
+}
+div#navbar button {
+    margin: 3px;
+}
+div#navbar button#nav_left {
+    float: left;
+    width: 20%;
+}
+div#navbar button#nav_top {
+    float: left;
+    width: 10%;
+}
+div#navbar button#nav_next {
+    float: left;
+    width: 45%;
+}
+div#navbar button#nav_right {
+    float: right;
+    width: 20%;
+}
+
+.skryt {
+    display: none;
+}
+
+div.pisen {
+    clear: both;
+}
+div.pisen label {
+    clear: both;
+    float: left;
+    width: 5em;
+}
+div.pisen input {
+    float: left;
+}
+div.pisen button {
+    float: left;
+    width: 3em;
+}
+div.pisen div.spacer {
+    clear: both;
+    float: left;
+    width: 5em;
+}
+div.pisen input#pisen {
+    width: 3em;
+    text-align: center;
+}
+div.pisen button#pisen_send {
+    width: 6em;
+}
+
+div.sloka {
+}
+div.kdy {
+    font-style: italic;
+}
+div.nazev, div#nazev {
+    font-weight: bold;
+}
+div#refren {
+    display: none;
+}

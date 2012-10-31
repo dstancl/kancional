@@ -27,11 +27,22 @@ function showSloka(s)
   if (s > pisen.pocet)
     s = 1;
   s = "sloka_"+s;
-  var lst = document.getElementsByClassName("sloka"), el;
-  for(var i = 0; i < lst.length; i++)
+  var lst = document.getElementsByClassName("sloka"), el, i;
+  for(i = 0; i < lst.length; i++)
   {
     el = lst[i];
     showElement(el, el.id && el.id == s);
+  }
+  // Doplnění textu refrénu
+  var el_refren = document.getElementById("refren");
+  if (el_refren != undefined)
+  {
+    lst = document.getElementsByClassName("refren");
+    for (i = 0; i < lst.length; i++)
+    {
+      el = lst[i];
+      el.innerHTML = el_refren.innerHTML;
+    }
   }
 }
 
