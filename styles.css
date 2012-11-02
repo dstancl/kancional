@@ -4,6 +4,9 @@ div#content {
 div#navbar {
     clear:both;
     border-top: solid 1px black;
+    position: absolute;
+    bottom: 2em;
+    width: 99%;
 }
 div#navbar button {
     margin: 0 1% 0 1%;
