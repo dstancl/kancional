@@ -11,7 +11,7 @@ function onLoad()
 {
   setHandler("nav_left", function(e) { onLeft(e); });
   setHandler("nav_top", function(e) { onTop(e); });
-  setHandler("nav_next", function(e) { onNext(e); });
+  //setHandler("nav_next", function(e) { onNext(e); });
   setHandler("nav_right", function(e) { onRight(e); });
 
   loadPageTop();
