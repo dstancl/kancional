@@ -6,7 +6,7 @@ div#navbar {
     clear:both;
     border-top: solid 1px black;
     position: absolute;
-    bottom: 2em;
+    bottom: 0;
     width: 99%;
 }
 div#navbar button {
