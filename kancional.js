@@ -59,12 +59,25 @@ function loadPage(page, func)
   if (p >= 0)
     baseURL = baseURL.substr(0, p+1);
   var a = new ajax();
+  a._page = page;
   a.onCompletion = function()
   {
     var el = document.getElementById("content");
     if (el == undefined)
       return;
-    el.innerHTML = this.responseText;
+    el.innerHTML = "<div id=\"cislo\"></div>" + this.responseText;
+    // Doplnění čísla
+    if (a._page != "top")
+    {
+      el = document.getElementById("cislo");
+      if (el != undefined)
+        el.innerHTML = a._page;
+      showElement("cislo");
+    }
+    else
+    {
+      showElement("cislo", false);
+    }
     func(this);
   };
   a.onError = function()
