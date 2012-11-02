@@ -1,5 +1,6 @@
 div#content {
     clear: both;
+    font-size: 18pt;
 }
 div#navbar {
     clear:both;
@@ -42,6 +43,9 @@ div.pisen label {
 }
 div.pisen input {
     float: left;
+    font-size: 166%;
+    letter-spacing: 0.2em;
+
 }
 div.pisen button {
     float: left;
@@ -61,13 +65,31 @@ div.pisen button#pisen_send {
 }
 
 div.sloka {
+    clear: both;
 }
 div.kdy {
     font-style: italic;
 }
 div.nazev, div#nazev {
+    float: left;
     font-weight: bold;
 }
 div#refren {
     display: none;
+}
+
+div#cislo {
+    float: left;
+    width: 3em;
+    font-weight: bold;
+    font-size: 166%;
+}
+div#info {
+    clear: both;
+    float: left;
+    font-style: italic;
+    font-size: 66%;
+    left: 7.5em;
+    position: relative;
+    top: -1em;
 }
