@@ -26,6 +26,7 @@ function showSloka(s)
     s = 1;
   if (s > pisen.pocet)
     s = 1;
+  s_cislo = s;
   s = "sloka_"+s;
   var lst = document.getElementsByClassName("sloka"), el, i;
   for(i = 0; i < lst.length; i++)
@@ -44,6 +45,9 @@ function showSloka(s)
       el.innerHTML = el_refren.innerHTML;
     }
   }
+  // Schování/zobrazení tlačítek
+  setVisibility("nav_left", s_cislo > 1);
+  setVisibility("nav_right", s_cislo < pisen.pocet);
 }
 
 /**

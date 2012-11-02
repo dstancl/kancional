@@ -19,6 +19,21 @@ function showElement(name, fShow)
 }
 
 /**
+ * Nastavení příznaku viditelnosti
+ *
+ * @param name Název elementu
+ * @param fVisible Příznak viditelnosti
+ */
+function setVisibility(name, fVisible)
+{
+  fVisible = fVisible == undefined ? true : fVisible;
+  var el = (name instanceof HTMLElement) ? name : document.getElementById(name);
+  if (el == undefined)
+    return;
+  el.style.visibility = fVisible ? "visible" : "hidden";
+}
+
+/**
  * Nastavení rutiny k elementu
  *
  * @param name Název elementu
