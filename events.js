@@ -108,10 +108,17 @@ function onPisenSend(e)
     return;
   if (pisen_el.value == '')
     pisen_el.value = '000';
-  var pisen;
+  var pisen, pisen_mod = '';
   try
   {
     pisen = parseInt(pisen_el.value, 10);
+    var lastCh = pisen_el.value.substr(-1);
+    if (lastCh == 'A' || lastCh == 'a')
+      pisen_mod = 'A';
+    else if (lastCh == 'B' || lastCh == 'b')
+      pisen_mod = 'B';
+    else if (lastCh == 'C' || lastCh == 'c')
+      pisen_mod = 'C';
   }
   catch (e)
   {
@@ -121,6 +128,6 @@ function onPisenSend(e)
     pisen = 0;
   if (pisen > 999)
     pisen = 999;
-  loadPagePisen(int2str(pisen, 3));
+  loadPagePisen(int2str(pisen, 3)+pisen_mod);
 }
 
