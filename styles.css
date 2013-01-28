@@ -3,15 +3,21 @@ body {
 }
 
 div#content {
+    position: absolute;
     clear: both;
     font-size: 18pt;
+    top: 0;
+    bottom: 1.5em;
+    overflow-y: auto
 }
 div#navbar {
     clear:both;
     border-top: solid 1px black;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 99%;
+    height: 1.5em;
+    padding-top: 5px;
 }
 div#navbar button {
     margin: 0 1% 0 1%;
