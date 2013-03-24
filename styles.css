@@ -102,3 +102,27 @@ div#info {
     position: relative;
     top: -1em;
 }
+
+ul.kc {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.kc li:before {
+    width: 1.5em;
+    font-weight: bold;
+    display: inline-block;
+}
+
+ul.kc li.K:before {
+    content: "K";
+}
+
+ul.kc li.K {
+    margin-top: 0.5em;
+}
+
+ul.kc li.L:before {
+    content: "L";
+}
