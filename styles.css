@@ -119,10 +119,14 @@ ul.kc li.K:before {
     content: "K";
 }
 
-ul.kc li.K {
+ul.kc li {
     margin-top: 0.5em;
 }
 
 ul.kc li.L:before {
     content: "L";
+}
+
+ul.kc li.L {
+    margin-top: 0;
 }
